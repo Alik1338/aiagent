@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: zhkh-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_EDITOR_CHAT_ID
+        sync: false
+      - key: PUBLISH_CHANNEL_ID
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: PHONE
+        sync: false
+      - key: TELETHON_SESSION_STRING
+        sync: false
+      - key: XAI_API_KEY
+        sync: false
+      - key: MONGODB_URI
+        sync: false
